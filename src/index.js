@@ -36,8 +36,8 @@ function colSearch(j, num, matrix){
 };
 
 function boxSearch(i, j, num, matrix){
-    const iBox = Math.floor(i / 3) * 3;
-    const jBox = Math.floor(j / 3) * 3;
+    let iBox = Math.floor(i / 3) * 3;
+    let jBox = Math.floor(j / 3) * 3;
     for (let row = 0; row < 3; row++){
         for (let col = 0; col < 3; col++){
             if (matrix[iBox + row][jBox + col] == num){
